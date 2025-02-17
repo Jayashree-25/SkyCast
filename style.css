@@ -28,9 +28,9 @@ body {
 }
 
 .container {
-    height: 70%;
+    height: 100%;
     width: 50%;
-    margin: 7% 20% 10% 25%;
+    margin: 7% 20% 15% 20%;
     padding: 25px;
     background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
     border-radius: 15px;
