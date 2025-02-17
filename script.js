@@ -1,18 +1,18 @@
 function getWeather() {
     const city = document.getElementById("city").value.trim();
     const apiKey = "4e589bbd2b8645c5973115928251602";
-    const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`;
+    const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`;  //constructs the API URL dynamically using template literals by inserting apiKey and city values.
 
     if (city === "") {
         alert("Please enter a city name!");
-        return;
+        return;  // stops further execution
     }
 
     fetch(url)
-        .then(response => response.json())
+        .then(response => response.json())  //converts the response into a js object
         .then(data => {
-            if(data.current){
-                const weatherDesc = data.current.condition.text.toLowerCase();
+            if(data.current){    //Checks if the API response contains data.current i.e., the current weather details exist
+                const weatherDesc = data.current.condition.text.toLowerCase();    //Retrieves the weather condition (Sunny, Cloudy, etc.) from the API response
                 const weatherContainer = document.getElementById("weather-container");
                 
                 const weatherImages = {
