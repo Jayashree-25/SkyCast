@@ -15,7 +15,7 @@ function getWeather() {
                 const weatherDesc = data.current.condition.text;
 
                 document.getElementById("weather-info").innerHTML = `
-                <h3 style = "color:white;">${data.location.name}, ${data.location.region},${data.location.country} co</h3>
+                <h3 style = "color:white;">${data.location.name}, ${data.location.region},${data.location.country}co</h3>
                 <p style = "color:white;">Temperature: <strong>${data.current.temp_c}°C</strong></p>
                 <p style = "color:white;">Weather: <strong>${weatherDesc}</strong></p>
                 <p style = "color:white;">Humidity: <strong>${data.current.humidity}%</strong></p>
