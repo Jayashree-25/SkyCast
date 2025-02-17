@@ -64,7 +64,7 @@ function getWeather() {
 
                 let bgImage = "assets/bg.png";
                 for(let key in weatherImages){
-                   if(weatherDesc.includes(key)){
+                   if(weatherDesc.includes(key)){   //If the weatherDesc contains a matching key
                     bgImage = weatherImages[key];
                     break;
                    }
