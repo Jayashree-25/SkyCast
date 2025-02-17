@@ -20,6 +20,7 @@ function getWeather() {
                 <p style = "color:white;">Weather: <strong>${weatherDesc}</strong></p>
                 <p style = "color:white;">Humidity: <strong>${data.current.humidity}%</strong></p>
                 <p style = "color:white;">Wind Speed: <strong>${data.current.wind_kph}kph</strong></p>
+                <p style = "color:white;">Cloud: <strong>${data.current.cloud}</strong></p>
                 `
             } else{
                 document.getElementById("weather-info").innerHTML = `<p style="color: red;">City not found!</p>`
