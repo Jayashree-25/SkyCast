@@ -1,0 +1,9 @@
+{
+    "routes": [
+      {
+        "src": "/api/weather",
+        "dest": "/api/weather.js"
+      }
+    ]
+  }
+  

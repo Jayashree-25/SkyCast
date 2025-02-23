@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:5000";  // Change this when deploying
+const BASE_URL = "https://sky-cast-mocha.vercel.app/api/weather";
 
 function getWeather() {
     const city = document.getElementById("city").value.trim();
@@ -7,7 +7,7 @@ function getWeather() {
         return;
     }
 
-    fetch(`${BASE_URL}/weather?city=${city}`)
+    fetch(`${BASE_URL}?city=${city}`)
         .then(response => response.json())
         .then(data => {
             if (data.current) {
