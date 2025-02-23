@@ -1,4 +1,4 @@
-const BASE_URL = "https://sky-cast-mocha.vercel.app/api/weather";
+const BASE_URL = "https://sky-cast-mocha.vercel.app/api/weather";  
 
 function getWeather() {
     const city = document.getElementById("city").value.trim();
