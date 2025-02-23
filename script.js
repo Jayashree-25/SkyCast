@@ -1,6 +1,6 @@
 function getWeather() {
     const city = document.getElementById("city").value.trim();
-    const apiKey = "4e589bbd2b8645c5973115928251602";
+    const apiKey = process.env.API_KEY;
     const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`;  //constructs the API URL dynamically using template literals by inserting apiKey and city values.
 
     if (city === "") {
